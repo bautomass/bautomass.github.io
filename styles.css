@@ -6,7 +6,6 @@
 
 html {
   width: 100%;
-  height: 100vh;
 }
 
 body {
@@ -20,6 +19,7 @@ body {
   justify-content: center;
   align-items: center;
   background-color: rgba(17, 17, 89, 0.8549019608);
+  margin-bottom: 2rem;
 }
 
 .updateScoreT1, .updateScoreT2 {
@@ -43,7 +43,6 @@ body {
   justify-content: center;
   align-items: center;
   color: #e7e6f7;
-  background-color: rgba(0, 0, 0, 0.616);
   text-align: center;
   padding: 5px;
 }
@@ -56,24 +55,29 @@ body {
   line-height: 1.4;
 }
 
-main {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.overlay {
   width: 100%;
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.616);
 }
 
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
 .main-grid {
   max-width: 800px;
   width: 700px;
+  min-width: 300px;
+  height: 100%;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-  gap: 5px;
+  gap: 3px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: -150px;
 }
 
 .grid--title {
