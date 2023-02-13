@@ -6,36 +6,43 @@ document.addEventListener("DOMContentLoaded", function() {
     // var updateScoreT1 = document.getElementById("updateScoreT1")
     // var updateScoreT2 = document.getElementById("updateScoreT2")
 
-    var g200 = document.getElementById("g200")
-    var g400 = document.getElementById("g400")
-    var g600 = document.getElementById("g600")
-    var g800 = document.getElementById("g800")
-    var g1000 = document.getElementById("g1000")
-    var d200 = document.getElementById("d200")
-    var d400 = document.getElementById("d400")
-    var d600 = document.getElementById("d600")
-    var d800 = document.getElementById("d800")
-    var d1000 = document.getElementById("d1000")
-    var a200 = document.getElementById("a200")
-    var a400 = document.getElementById("a400")
-    var a600 = document.getElementById("a600")
-    var a800 = document.getElementById("a800")
-    var a1000 = document.getElementById("a1000")
-    var m200 = document.getElementById("m200")
-    var m400 = document.getElementById("m400")
-    var m600 = document.getElementById("m600")
-    var m800 = document.getElementById("m800")
-    var m1000 = document.getElementById("m1000")
-    var dz200 = document.getElementById("dz200")
-    var dz400 = document.getElementById("dz400")
-    var dz600 = document.getElementById("dz600")
-    var dz800 = document.getElementById("dz800")
-    var dz1000 = document.getElementById("dz1000")
-    var c200 = document.getElementById("c200")
-    var c400 = document.getElementById("c400")
-    var c600 = document.getElementById("c600")
-    var c800 = document.getElementById("c800")
-    var c1000 = document.getElementById("c1000")
+    var flipCard = document.querySelectorAll("#flipCard")
+
+
+
+
+    const storage = {
+    g200: document.getElementById("g200"),
+    g400: document.getElementById("g400"),
+    g600: document.getElementById("g600"),
+    g800: document.getElementById("g800"),
+    g1000: document.getElementById("g1000"),
+    d200: document.getElementById("d200"),
+    d400: document.getElementById("d400"),
+    d600: document.getElementById("d600"),
+    d800: document.getElementById("d800"),
+    d1000: document.getElementById("d1000"),
+    a200: document.getElementById("a200"),
+    a400: document.getElementById("a400"),
+    a600: document.getElementById("a600"),
+    a800: document.getElementById("a800"),
+    a1000: document.getElementById("a1000"),
+    m200: document.getElementById("m200"),
+    m400: document.getElementById("m400"),
+    m600: document.getElementById("m600"),
+    m800: document.getElementById("m800"),
+    m1000: document.getElementById("m1000"),
+    dz200: document.getElementById("dz200"),
+    dz400: document.getElementById("dz400"),
+    dz600: document.getElementById("dz600"),
+    dz800: document.getElementById("dz800"),
+    dz1000: document.getElementById("dz1000"),
+    c200: document.getElementById("c200"),
+    c400: document.getElementById("c400"),
+    c600: document.getElementById("c600"),
+    c800: document.getElementById("c800"),
+    c1000: document.getElementById("c1000")
+}
 
     g200.addEventListener("click", geo200)
     g400.addEventListener("click", geo400)
