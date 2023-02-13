@@ -16,8 +16,31 @@ body {
     background-size: cover;
 }
 
+.scoreTable {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #111159da;
+}
+
+
+.updateScoreT1, .updateScoreT2 {
+  color: red;
+}
+
+#teamOneScore, #teamTwoScore {
+  color: gold;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+#teamOneScore{
+  margin-right: 5px;
+}
+
 .game-wrapper {
     width: 100%;
+    height: 80px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -32,6 +55,7 @@ body {
   background: -webkit-linear-gradient(#F85C7C, #FCDF61);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  line-height: 1.4;
 }
 
 main {
@@ -39,7 +63,7 @@ main {
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     background-color: rgba(0, 0, 0, 0.616);
 }
 
@@ -165,34 +189,3 @@ main {
   color: gold;
   transition: .7s ease;
 }
-
-
-
-
-
-//     .grid--title, .grid--items {
-//         display: flex;
-//         justify-content: center;
-//         align-items: center;
-//         font-weight: 800;
-//         border-radius: 6.25px;
-//         box-shadow: inset 0px 0px 0px 2px black;
-//     }
-//     .grid--items {
-//         height: 100px;
-//         color: gold;
-//         cursor: pointer;
-//         background-color: #aa22f8c1;
-//     }.grid--title {
-//         height: 50px;
-//         text-transform: uppercase;
-//         background-color: #aa22f8;
-//         font-size: 16px;
-//         color: #110D57;
-//     }
-// }
-
-
-// .grid--items:hover {
-//     transform: rotateY(180deg)
-// }

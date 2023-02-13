@@ -3,6 +3,9 @@ document.addEventListener("DOMContentLoaded", function() {
     var changeAccordingly = document.getElementById("frontgeo200")
     var firstQuestion = document.getElementById("first-question")
 
+    // var updateScoreT1 = document.getElementById("updateScoreT1")
+    // var updateScoreT2 = document.getElementById("updateScoreT2")
+
     var g200 = document.getElementById("g200")
     var g400 = document.getElementById("g400")
     var g600 = document.getElementById("g600")
@@ -66,8 +69,6 @@ document.addEventListener("DOMContentLoaded", function() {
     c1000.addEventListener("click", people1000)
 
 
-
-
     function geo200() {
         const overlay = document.createElement("div");
         overlay.style.position = "fixed";
@@ -98,10 +99,13 @@ document.addEventListener("DOMContentLoaded", function() {
 
         answerInput.forEach(answer => {
             answer.addEventListener("click", function() {
+                var add200 = 200
                 if (answer.value === firstQuestion.value) {
                     content.style.backgroundColor = "green";
                     content.innerHTML = "Jūs atbildējāt pareizi!<br>Jūsu komanda ieguva 200 punktu.<br><br>";
                     changeAccordingly.style.backgroundColor = "green";
+                    changeAccordingly.style.fontSize = "40px"
+                    // updateScoreT1.innerText = Number(updateScoreT1.innerText) + Number(add200);
                 } else if (answer.value !== firstQuestion.value) {
                     content.innerHTML = 
                     "Jūs atbildējāt nepareizi!<br><br>";
@@ -156,12 +160,15 @@ document.addEventListener("DOMContentLoaded", function() {
 
         answerInput.forEach(answer => {
             answer.addEventListener("click", function() {
+                var add200 = 200
                 var secondQuestion = document.getElementById("second-question")
                 var changeAccordingly = document.getElementById("frontd200")
                 if (answer.value === secondQuestion.value) {
                     content.style.backgroundColor = "green";
                     content.innerHTML = "Jūs atbildējāt pareizi!<br>Jūsu komanda ieguva 200 punktu.<br><br>";
                     changeAccordingly.style.backgroundColor = "green";
+                    changeAccordingly.style.fontSize = "40px"
+                    // updateScoreT1.innerText = Number(updateScoreT1.innerText) + Number(add200);
                 } else if (answer.value !== secondQuestion.value) {
                     content.innerHTML = 
                     "Jūs atbildējāt nepareizi!<br><br>";
@@ -215,12 +222,15 @@ document.addEventListener("DOMContentLoaded", function() {
 
         answerInput.forEach(answer => {
             answer.addEventListener("click", function() {
+                var add200 = 200
                 var thirdQuestion = document.getElementById("third-question")
                 var changeAccordingly = document.getElementById("fronta200")
                 if (answer.value === thirdQuestion.value) {
                     content.style.backgroundColor = "green";
                     content.innerHTML = "Jūs atbildējāt pareizi!<br>Jūsu komanda ieguva 200 punktu.<br><br>";
                     changeAccordingly.style.backgroundColor = "green";
+                    changeAccordingly.style.fontSize = "40px"
+                    // updateScoreT1.innerText = Number(updateScoreT1.innerText) + Number(add200);
                 } else if (answer.value !== thirdQuestion.value) {
                     content.innerHTML = 
                     "Jūs atbildējāt nepareizi!<br><br>";
@@ -274,12 +284,15 @@ document.addEventListener("DOMContentLoaded", function() {
 
         answerInput.forEach(answer => {
             answer.addEventListener("click", function() {
+                var add200 = 200
                 var forthQuestion = document.getElementById("forth-question")
                 var changeAccordingly = document.getElementById("musician200")
                 if (answer.value === forthQuestion.value) {
                     content.style.backgroundColor = "green";
                     content.innerHTML = "Jūs atbildējāt pareizi!<br>Jūsu komanda ieguva 200 punktu.<br><br>";
                     changeAccordingly.style.backgroundColor = "green";
+                    changeAccordingly.style.fontSize = "40px"
+                    // updateScoreT1.innerText = Number(updateScoreT1.innerText) + Number(add200);
                 } else if (answer.value !== forthQuestion.value) {
                     content.innerHTML = 
                     "Jūs atbildējāt nepareizi!<br><br>";
@@ -333,12 +346,15 @@ document.addEventListener("DOMContentLoaded", function() {
 
         answerInput.forEach(answer => {
             answer.addEventListener("click", function() {
+                var add200 = 200
                 var fifthQuestion = document.getElementById("fifth-question")
                 var changeAccordingly = document.getElementById("animal200")
                 if (answer.value === fifthQuestion.value) {
                     content.style.backgroundColor = "green";
                     content.innerHTML = "Jūs atbildējāt pareizi!<br>Jūsu komanda ieguva 200 punktu.<br><br>";
                     changeAccordingly.style.backgroundColor = "green";
+                    changeAccordingly.style.fontSize = "40px"
+                    // updateScoreT1.innerText = Number(updateScoreT1.innerText) + Number(add200);
                 } else if (answer.value !== fifthQuestion.value) {
                     content.innerHTML = 
                     "Jūs atbildējāt nepareizi!<br><br>";
@@ -392,12 +408,15 @@ document.addEventListener("DOMContentLoaded", function() {
 
         answerInput.forEach(answer => {
             answer.addEventListener("click", function() {
+                var add200 = 200
                 var sixthQuestion = document.getElementById("sixth-question")
                 var changeAccordingly = document.getElementById("peopl200")
                 if (answer.value === sixthQuestion.value) {
                     content.style.backgroundColor = "green";
                     content.innerHTML = "Jūs atbildējāt pareizi!<br>Jūsu komanda ieguva 200 punktu.<br><br>";
                     changeAccordingly.style.backgroundColor = "green";
+                    changeAccordingly.style.fontSize = "40px"
+                    // updateScoreT1.innerText = Number(updateScoreT1.innerText) + Number(add200);
                 } else if (answer.value !== sixthQuestion.value) {
                     content.innerHTML = 
                     "Jūs atbildējāt nepareizi!<br><br>";
@@ -452,12 +471,15 @@ document.addEventListener("DOMContentLoaded", function() {
     
             answerInput.forEach(answer => {
                 answer.addEventListener("click", function() {
+                    var add400 = 400
                     var secondQuestion = document.getElementById("seventh-question")
                     var changeAccordingly = document.getElementById("frontgeo400")
                     if (answer.value === secondQuestion.value) {
                         content.style.backgroundColor = "green";
                         content.innerHTML = "Jūs atbildējāt pareizi!<br>Jūsu komanda ieguva 400 punktu.<br><br>";
                         changeAccordingly.style.backgroundColor = "green";
+                        changeAccordingly.style.fontSize = "40px"
+                        // updateScoreT1.innerText = Number(updateScoreT1.innerText) + Number(add400);
                     } else if (answer.value !== secondQuestion.value) {
                         content.innerHTML = 
                         "Jūs atbildējāt nepareizi!<br><br>";
@@ -511,12 +533,15 @@ document.addEventListener("DOMContentLoaded", function() {
         
                 answerInput.forEach(answer => {
                     answer.addEventListener("click", function() {
+                        var add400 = 400
                         var eithQuestion = document.getElementById("eith-question")
                         var changeAccordingly = document.getElementById("frontd400")
                         if (answer.value === eithQuestion.value) {
                             content.style.backgroundColor = "green";
                             content.innerHTML = "Jūs atbildējāt pareizi!<br>Jūsu komanda ieguva 400 punktu.<br><br>";
                             changeAccordingly.style.backgroundColor = "green";
+                            changeAccordingly.style.fontSize = "40px"
+                            // updateScoreT1.innerText = Number(updateScoreT1.innerText) + Number(add400);
                         } else if (answer.value !== eithQuestion.value) {
                             content.innerHTML = 
                             "Jūs atbildējāt nepareizi!<br><br>";
@@ -570,12 +595,15 @@ document.addEventListener("DOMContentLoaded", function() {
     
             answerInput.forEach(answer => {
                 answer.addEventListener("click", function() {
+                    var add400 = 400
                     var ninthQuestion = document.getElementById("ninth-question")
                     var changeAccordingly = document.getElementById("fronta400")
                     if (answer.value === ninthQuestion.value) {
                         content.style.backgroundColor = "green";
                         content.innerHTML = "Jūs atbildējāt pareizi!<br>Jūsu komanda ieguva 400 punktu.<br><br>";
                         changeAccordingly.style.backgroundColor = "green";
+                        changeAccordingly.style.fontSize = "40px"
+                        // updateScoreT1.innerText = Number(updateScoreT1.innerText) + Number(add400);
                     } else if (answer.value !== ninthQuestion.value) {
                         content.innerHTML = 
                         "Jūs atbildējāt nepareizi!<br><br>";
@@ -630,12 +658,15 @@ document.addEventListener("DOMContentLoaded", function() {
         
                 answerInput.forEach(answer => {
                     answer.addEventListener("click", function() {
+                        var add400 = 400
                         var tenthQuestion = document.getElementById("tenth-question")
                         var changeAccordingly = document.getElementById("musician400")
                         if (answer.value === tenthQuestion.value) {
                             content.style.backgroundColor = "green";
                             content.innerHTML = "Jūs atbildējāt pareizi!<br>Jūsu komanda ieguva 400 punktu.<br><br>";
                             changeAccordingly.style.backgroundColor = "green";
+                            changeAccordingly.style.fontSize = "40px"
+                            // updateScoreT1.innerText = Number(updateScoreT1.innerText) + Number(add400);
                         } else if (answer.value !== tenthQuestion.value) {
                             content.innerHTML = 
                             "Jūs atbildējāt nepareizi!<br><br>";
@@ -689,12 +720,15 @@ document.addEventListener("DOMContentLoaded", function() {
             
                     answerInput.forEach(answer => {
                         answer.addEventListener("click", function() {
+                            var add400 = 400
                             var eleventhQuestion = document.getElementById("eleventh-question")
                             var changeAccordingly = document.getElementById("animal400")
                             if (answer.value === eleventhQuestion.value) {
                                 content.style.backgroundColor = "green";
                                 content.innerHTML = "Jūs atbildējāt pareizi!<br>Jūsu komanda ieguva 400 punktu.<br><br>";
                                 changeAccordingly.style.backgroundColor = "green";
+                                changeAccordingly.style.fontSize = "40px"
+                                // updateScoreT1.innerText = Number(updateScoreT1.innerText) + Number(add400);
                             } else if (answer.value !== eleventhQuestion.value) {
                                 content.innerHTML = 
                                 "Jūs atbildējāt nepareizi!<br><br>";
@@ -748,12 +782,15 @@ document.addEventListener("DOMContentLoaded", function() {
     
             answerInput.forEach(answer => {
                 answer.addEventListener("click", function() {
+                    var add400 = 400
                     var twelvethQuestion = document.getElementById("twelveth-question")
                     var changeAccordingly = document.getElementById("peopl400")
                     if (answer.value === twelvethQuestion.value) {
                         content.style.backgroundColor = "green";
                         content.innerHTML = "Jūs atbildējāt pareizi!<br>Jūsu komanda ieguva 400 punktu.<br><br>";
                         changeAccordingly.style.backgroundColor = "green";
+                        changeAccordingly.style.fontSize = "40px"
+                        // updateScoreT1.innerText = Number(updateScoreT1.innerText) + Number(add400);
                     } else if (answer.value !== twelvethQuestion.value) {
                         content.innerHTML = 
                         "Jūs atbildējāt nepareizi!<br><br>";
@@ -808,12 +845,15 @@ document.addEventListener("DOMContentLoaded", function() {
     
             answerInput.forEach(answer => {
                 answer.addEventListener("click", function() {
+                    var add600 = 600
                     var trnthQuestion = document.getElementById("trnth-question")
                     var changeAccordingly = document.getElementById("frontgeo600")
                     if (answer.value === trnthQuestion.value) {
                         content.style.backgroundColor = "green";
                         content.innerHTML = "Jūs atbildējāt pareizi!<br>Jūsu komanda ieguva 600 punktu.<br><br>";
                         changeAccordingly.style.backgroundColor = "green";
+                        changeAccordingly.style.fontSize = "40px"
+                        // updateScoreT1.innerText = Number(updateScoreT1.innerText) + Number(add600);
                     } else if (answer.value !== trnthQuestion.value) {
                         content.innerHTML = 
                         "Jūs atbildējāt nepareizi!<br><br>";
@@ -867,12 +907,15 @@ document.addEventListener("DOMContentLoaded", function() {
     
             answerInput.forEach(answer => {
                 answer.addEventListener("click", function() {
+                    var add600 = 600
                     var frtnthQuestion = document.getElementById("frtnth-question")
                     var changeAccordingly = document.getElementById("frontd600")
                     if (answer.value === frtnthQuestion.value) {
                         content.style.backgroundColor = "green";
                         content.innerHTML = "Jūs atbildējāt pareizi!<br>Jūsu komanda ieguva 600 punktu.<br><br>";
                         changeAccordingly.style.backgroundColor = "green";
+                        changeAccordingly.style.fontSize = "40px"
+                        // updateScoreT1.innerText = Number(updateScoreT1.innerText) + Number(add600);
                     } else if (answer.value !== frtnthQuestion.value) {
                         content.innerHTML = 
                         "Jūs atbildējāt nepareizi!<br><br>";
@@ -926,12 +969,15 @@ document.addEventListener("DOMContentLoaded", function() {
     
             answerInput.forEach(answer => {
                 answer.addEventListener("click", function() {
+                    var add600 = 600
                     var fifthnthQuestion = document.getElementById("fifthnth-question")
                     var changeAccordingly = document.getElementById("fronta600")
                     if (answer.value === fifthnthQuestion.value) {
                         content.style.backgroundColor = "green";
                         content.innerHTML = "Jūs atbildējāt pareizi!<br>Jūsu komanda ieguva 600 punktu.<br><br>";
                         changeAccordingly.style.backgroundColor = "green";
+                        changeAccordingly.style.fontSize = "40px"
+                        // updateScoreT1.innerText = Number(updateScoreT1.innerText) + Number(add600);
                     } else if (answer.value !== fifthnthQuestion.value) {
                         content.innerHTML = 
                         "Jūs atbildējāt nepareizi!<br><br>";
@@ -985,12 +1031,15 @@ document.addEventListener("DOMContentLoaded", function() {
     
             answerInput.forEach(answer => {
                 answer.addEventListener("click", function() {
+                    var add600 = 600
                     var sixtnthQuestion = document.getElementById("sixtnth-question")
                     var changeAccordingly = document.getElementById("musician600")
                     if (answer.value === sixtnthQuestion.value) {
                         content.style.backgroundColor = "green";
                         content.innerHTML = "Jūs atbildējāt pareizi!<br>Jūsu komanda ieguva 600 punktu.<br><br>";
                         changeAccordingly.style.backgroundColor = "green";
+                        changeAccordingly.style.fontSize = "40px"
+                        // updateScoreT1.innerText = Number(updateScoreT1.innerText) + Number(add600);
                     } else if (answer.value !== sixtnthQuestion.value) {
                         content.innerHTML = 
                         "Jūs atbildējāt nepareizi!<br><br>";
@@ -1044,12 +1093,15 @@ document.addEventListener("DOMContentLoaded", function() {
 
         answerInput.forEach(answer => {
             answer.addEventListener("click", function() {
+                var add600 = 600
                 var seventhnQuestion = document.getElementById("seventhn-question")
                 var changeAccordingly = document.getElementById("animal600")
                 if (answer.value === seventhnQuestion.value) {
                     content.style.backgroundColor = "green";
                     content.innerHTML = "Jūs atbildējāt pareizi!<br>Jūsu komanda ieguva 600 punktu.<br><br>";
                     changeAccordingly.style.backgroundColor = "green";
+                    changeAccordingly.style.fontSize = "40px"
+                    // updateScoreT1.innerText = Number(updateScoreT1.innerText) + Number(add600);
                 } else if (answer.value !== seventhnQuestion.value) {
                     content.innerHTML = 
                     "Jūs atbildējāt nepareizi!<br><br>";
@@ -1103,12 +1155,15 @@ document.addEventListener("DOMContentLoaded", function() {
 
     answerInput.forEach(answer => {
         answer.addEventListener("click", function() {
+            var add600 = 600
             var eitnQuestion = document.getElementById("eitn-question")
             var changeAccordingly = document.getElementById("peopl600")
             if (answer.value === eitnQuestion.value) {
                 content.style.backgroundColor = "green";
                 content.innerHTML = "Jūs atbildējāt pareizi!<br>Jūsu komanda ieguva 600 punktu.<br><br>";
                 changeAccordingly.style.backgroundColor = "green";
+                changeAccordingly.style.fontSize = "40px"
+                // updateScoreT1.innerText = Number(updateScoreT1.innerText) + Number(add600);
             } else if (answer.value !== eitnQuestion.value) {
                 content.innerHTML = 
                 "Jūs atbildējāt nepareizi!<br><br>";
@@ -1163,12 +1218,15 @@ document.addEventListener("DOMContentLoaded", function() {
     
             answerInput.forEach(answer => {
                 answer.addEventListener("click", function() {
+                    var add800 = 800
                     var nithQuestion = document.getElementById("nith-question")
                     var changeAccordingly = document.getElementById("frontgeo800")
                     if (answer.value === nithQuestion.value) {
                         content.style.backgroundColor = "green";
                         content.innerHTML = "Jūs atbildējāt pareizi!<br>Jūsu komanda ieguva 800 punktu.<br><br>";
                         changeAccordingly.style.backgroundColor = "green";
+                        changeAccordingly.style.fontSize = "40px"
+                        // updateScoreT1.innerText = Number(updateScoreT1.innerText) + Number(add800);
                     } else if (answer.value !== nithQuestion.value) {
                         content.innerHTML = 
                         "Jūs atbildējāt nepareizi!<br><br>";
@@ -1222,12 +1280,15 @@ document.addEventListener("DOMContentLoaded", function() {
     
             answerInput.forEach(answer => {
                 answer.addEventListener("click", function() {
+                    var add800 = 800
                     var twenthhQuestion = document.getElementById("twenth-question")
                     var changeAccordingly = document.getElementById("frontd800")
                     if (answer.value === twenthhQuestion.value) {
                         content.style.backgroundColor = "green";
                         content.innerHTML = "Jūs atbildējāt pareizi!<br>Jūsu komanda ieguva 800 punktu.<br><br>";
                         changeAccordingly.style.backgroundColor = "green";
+                        changeAccordingly.style.fontSize = "40px"
+                        // updateScoreT1.innerText = Number(updateScoreT1.innerText) + Number(add800);
                     } else if (answer.value !== twenthhQuestion.value) {
                         content.innerHTML = 
                         "Jūs atbildējāt nepareizi!<br><br>";
@@ -1281,12 +1342,15 @@ document.addEventListener("DOMContentLoaded", function() {
     
             answerInput.forEach(answer => {
                 answer.addEventListener("click", function() {
+                    var add800 = 800
                     var twenthoneQuestion = document.getElementById("twenthone-question")
                     var changeAccordingly = document.getElementById("fronta800")
                     if (answer.value === twenthoneQuestion.value) {
                         content.style.backgroundColor = "green";
                         content.innerHTML = "Jūs atbildējāt pareizi!<br>Jūsu komanda ieguva 800 punktu.<br><br>";
                         changeAccordingly.style.backgroundColor = "green";
+                        changeAccordingly.style.fontSize = "40px"
+                        // updateScoreT1.innerText = Number(updateScoreT1.innerText) + Number(add800);
                     } else if (answer.value !== twenthoneQuestion.value) {
                         content.innerHTML = 
                         "Jūs atbildējāt nepareizi!<br><br>";
@@ -1340,12 +1404,15 @@ document.addEventListener("DOMContentLoaded", function() {
     
             answerInput.forEach(answer => {
                 answer.addEventListener("click", function() {
+                    var add800 = 800
                     var twenthtwoQuestion = document.getElementById("twenthtwo-question")
                     var changeAccordingly = document.getElementById("musician800")
                     if (answer.value === twenthtwoQuestion.value) {
                         content.style.backgroundColor = "green";
                         content.innerHTML = "Jūs atbildējāt pareizi!<br>Jūsu komanda ieguva 600 punktu.<br><br>";
                         changeAccordingly.style.backgroundColor = "green";
+                        changeAccordingly.style.fontSize = "40px"
+                        // updateScoreT1.innerText = Number(updateScoreT1.innerText) + Number(add800);
                     } else if (answer.value !== twenthtwoQuestion.value) {
                         content.innerHTML = 
                         "Jūs atbildējāt nepareizi!<br><br>";
@@ -1399,12 +1466,15 @@ document.addEventListener("DOMContentLoaded", function() {
 
         answerInput.forEach(answer => {
             answer.addEventListener("click", function() {
+                var add800 = 800
                 var twenththreeQuestion = document.getElementById("twenththree-question")
                 var changeAccordingly = document.getElementById("animal800")
                 if (answer.value === twenththreeQuestion.value) {
                     content.style.backgroundColor = "green";
                     content.innerHTML = "Jūs atbildējāt pareizi!<br>Jūsu komanda ieguva 800 punktu.<br><br>";
                     changeAccordingly.style.backgroundColor = "green";
+                    changeAccordingly.style.fontSize = "40px"
+                    // updateScoreT1.innerText = Number(updateScoreT1.innerText) + Number(add800);
                 } else if (answer.value !== twenththreeQuestion.value) {
                     content.innerHTML = 
                     "Jūs atbildējāt nepareizi!<br><br>";
@@ -1458,12 +1528,15 @@ document.addEventListener("DOMContentLoaded", function() {
 
     answerInput.forEach(answer => {
         answer.addEventListener("click", function() {
+            var add800 = 800
             var twenthtfourthQuestion = document.getElementById("twenthtfourth-question")
             var changeAccordingly = document.getElementById("peopl800")
             if (answer.value === twenthtfourthQuestion.value) {
                 content.style.backgroundColor = "green";
                 content.innerHTML = "Jūs atbildējāt pareizi!<br>Jūsu komanda ieguva 800 punktu.<br><br>";
                 changeAccordingly.style.backgroundColor = "green";
+                changeAccordingly.style.fontSize = "40px"
+                // updateScoreT1.innerText = Number(updateScoreT1.innerText) + Number(add800);
             } else if (answer.value !== twenthtfourthQuestion.value) {
                 content.innerHTML = 
                 "Jūs atbildējāt nepareizi!<br><br>";
@@ -1518,12 +1591,15 @@ document.addEventListener("DOMContentLoaded", function() {
     
             answerInput.forEach(answer => {
                 answer.addEventListener("click", function() {
+                    var add1000 = 1000
                     var twenthtfifthQuestion = document.getElementById("twenthtfifth-question")
                     var changeAccordingly = document.getElementById("frontgeo1000")
                     if (answer.value === twenthtfifthQuestion.value) {
                         content.style.backgroundColor = "green";
                         content.innerHTML = "Jūs atbildējāt pareizi!<br>Jūsu komanda ieguva 1000 punktu.<br><br>";
                         changeAccordingly.style.backgroundColor = "green";
+                        changeAccordingly.style.fontSize = "40px"
+                        // updateScoreT1.innerText = Number(updateScoreT1.innerText) + Number(add1000);
                     } else if (answer.value !== twenthtfifthQuestion.value) {
                         content.innerHTML = 
                         "Jūs atbildējāt nepareizi!<br><br>";
@@ -1577,12 +1653,15 @@ document.addEventListener("DOMContentLoaded", function() {
     
             answerInput.forEach(answer => {
                 answer.addEventListener("click", function() {
+                    var add1000 = 1000
                     var twentysixQuestion = document.getElementById("twentysix-question")
                     var changeAccordingly = document.getElementById("frontd1000")
                     if (answer.value === twentysixQuestion.value) {
                         content.style.backgroundColor = "green";
                         content.innerHTML = "Jūs atbildējāt pareizi!<br>Jūsu komanda ieguva 1000 punktu.<br><br>";
                         changeAccordingly.style.backgroundColor = "green";
+                        changeAccordingly.style.fontSize = "40px"
+                        // updateScoreT1.innerText = Number(updateScoreT1.innerText) + Number(add1000);
                     } else if (answer.value !== twentysixQuestion.value) {
                         content.innerHTML = 
                         "Jūs atbildējāt nepareizi!<br><br>";
@@ -1636,12 +1715,15 @@ document.addEventListener("DOMContentLoaded", function() {
     
             answerInput.forEach(answer => {
                 answer.addEventListener("click", function() {
+                    var add1000 = 1000
                     var twentysevenQuestion = document.getElementById("twentyseven-question")
                     var changeAccordingly = document.getElementById("fronta1000")
                     if (answer.value === twentysevenQuestion.value) {
                         content.style.backgroundColor = "green";
                         content.innerHTML = "Jūs atbildējāt pareizi!<br>Jūsu komanda ieguva 600 punktu.<br><br>";
                         changeAccordingly.style.backgroundColor = "green";
+                        changeAccordingly.style.fontSize = "40px"
+                        // updateScoreT1.innerText = Number(updateScoreT1.innerText) + Number(add1000);
                     } else if (answer.value !== twentysevenQuestion.value) {
                         content.innerHTML = 
                         "Jūs atbildējāt nepareizi!<br><br>";
@@ -1695,12 +1777,15 @@ document.addEventListener("DOMContentLoaded", function() {
     
             answerInput.forEach(answer => {
                 answer.addEventListener("click", function() {
+                    var add1000 = 1000
                     var twentyeiQuestion = document.getElementById("twentyei-question")
                     var changeAccordingly = document.getElementById("musician1000")
                     if (answer.value === twentyeiQuestion.value) {
                         content.style.backgroundColor = "green";
                         content.innerHTML = "Jūs atbildējāt pareizi!<br>Jūsu komanda ieguva 1000 punktu.<br><br>";
                         changeAccordingly.style.backgroundColor = "green";
+                        changeAccordingly.style.fontSize = "40px"
+                        // updateScoreT1.innerText = Number(updateScoreT1.innerText) + Number(add1000);
                     } else if (answer.value !== twentyeiQuestion.value) {
                         content.innerHTML = 
                         "Jūs atbildējāt nepareizi!<br><br>";
@@ -1754,12 +1839,15 @@ document.addEventListener("DOMContentLoaded", function() {
 
         answerInput.forEach(answer => {
             answer.addEventListener("click", function() {
+                var add1000 = 1000
                 var twentynineQuestion = document.getElementById("twentynine-question")
                 var changeAccordingly = document.getElementById("animal1000")
                 if (answer.value === twentynineQuestion.value) {
                     content.style.backgroundColor = "green";
                     content.innerHTML = "Jūs atbildējāt pareizi!<br>Jūsu komanda ieguva 1000 punktu.<br><br>";
                     changeAccordingly.style.backgroundColor = "green";
+                    changeAccordingly.style.fontSize = "40px"
+                    // updateScoreT1.innerText = Number(updateScoreT1.innerText) + Number(add1000);
                 } else if (answer.value !== twentynineQuestion.value) {
                     content.innerHTML = 
                     "Jūs atbildējāt nepareizi!<br><br>";
@@ -1813,12 +1901,15 @@ document.addEventListener("DOMContentLoaded", function() {
 
     answerInput.forEach(answer => {
         answer.addEventListener("click", function() {
+            var add1000 = 1000
             var thirtnhQuestion = document.getElementById("thirtnh-question")
             var changeAccordingly = document.getElementById("peopl1000")
             if (answer.value === thirtnhQuestion.value) {
                 content.style.backgroundColor = "green";
                 content.innerHTML = "Jūs atbildējāt pareizi!<br>Jūsu komanda ieguva 1000 punktu.<br><br>";
                 changeAccordingly.style.backgroundColor = "green";
+                changeAccordingly.style.fontSize = "40px"
+                // updateScoreT1.innerText = Number(updateScoreT1.innerText) + Number(add1000);
             } else if (answer.value !== thirtnhQuestion.value) {
                 content.innerHTML = 
                 "Jūs atbildējāt nepareizi!<br><br>";
