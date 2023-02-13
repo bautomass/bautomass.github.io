@@ -54,6 +54,9 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   line-height: 1.4;
+  @media  (max-width: 663px) {
+    font-size: 1.4rem           
+}
 }
 
 .overlay {
@@ -70,9 +73,8 @@ main {
 }
 
 .main-grid {
-    max-width: 800px;
-    width: 700px;
-    min-width: 300px;
+    width: max(100% - 2rem);
+    max-width: 700px;
     height: 100%;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
@@ -92,6 +94,9 @@ main {
         font-weight: 800;
         border-radius: 6.25px;
         box-shadow: inset 0px 0px 0px 2px #000000;
+          @media  (max-width: 663px) {
+              display: none;              
+          }
     }
 
 .flip-card {
